@@ -57,6 +57,25 @@ touch main.go
 go run main.go
 ```
 
+## Go Testing
+
+The test files are always created adding prefix file name, `<filenname>_test.go`.
+
+The available testing programs commands for the test function `func TestHello(t *testing.T)`.
+
+```sh
+touch hello_test.go
+go test
+```
+
+Inside our test file, the testable functions begins with `Example` (much like test functions begins with `Test`)
+
+The command to run more detailed execution of our test programs `func ExampleHello()`.
+
+```sh
+go test -v
+```
+
 ## Refactoring and your tooling
 
 A big emphasis of this book is the importance of refactoring.
@@ -82,3 +101,7 @@ Mastering your tools will help you concentrate on the code and reduce context sw
 ## Wrapping up
 
 At this point you should have Go installed, an editor available and some basic tooling in place. Go has a very large ecosystem of third party products. We have identified a few useful components here. For a more complete list, see [https://awesome-go.com](https://awesome-go.com).
+
+```
+
+```
