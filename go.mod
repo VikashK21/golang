@@ -1,3 +1,3 @@
-module 2_hello
+module golang
 
 go 1.21.7
