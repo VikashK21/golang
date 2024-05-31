@@ -76,6 +76,18 @@ The command to run more detailed execution of our test programs `func ExampleHel
 go test -v
 ```
 
+To run the benchmarks `func BenchmarkRepeat(b *testing.B)` commands.
+
+```sh
+go test -bench=.
+```
+
+Or if we're in Windows Powershell
+
+```sh
+go test -bench="."
+```
+
 ## Refactoring and your tooling
 
 A big emphasis of this book is the importance of refactoring.
