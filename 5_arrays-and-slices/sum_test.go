@@ -70,7 +70,8 @@ func TestSumAllTails(t *testing.T) {
 	})
 }
 
-func checkSums(t *testing.T, got []int, want []int) {
+func checkSums(t testing.TB, got []int, want []int) {
+	t.Helper() // helps in finding the exact error line
 	if !reflect.DeepEqual(got, want) {
 		t.Errorf("got %v want %v", got, want)
 	}
