@@ -88,6 +88,14 @@ Or if we're in Windows Powershell
 go test -bench="."
 ```
 
+Test coverage is a term that describes how much of a package’s code is exercised by running the package’s tests. If executing the test suite causes 80% of the package’s source statements to be run, we say that the test coverage is 80%.
+
+To run the `coverage` command to identify areas of our code covered by tests.
+
+```sh
+go test -cover
+```
+
 ## Refactoring and your tooling
 
 A big emphasis of this book is the importance of refactoring.
